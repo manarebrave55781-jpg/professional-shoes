@@ -2,147 +2,124 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>ALL SHOES — Premium Footwear</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="VLanetnio — premium footwear with modern designs and everyday comfort.">
+<title>VLanetnio — Premium Footwear</title>
 <style>
-:root{--black:#0b0b0b;--soft:#f5f5f5;--line:#e8e8e8}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--black);background:#fff}
-header{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;background:#fff;z-index:20}
-.logo{font-weight:950;font-size:23px;letter-spacing:3px}nav{display:flex;gap:28px;font-size:14px}nav a{text-decoration:none;color:#111}.cart{font-weight:800;cursor:pointer}
-.hero{margin:0 4%;min-height:590px;background:linear-gradient(115deg,#f2f2f2,#fff);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:6%;overflow:hidden}
-.kicker{font-size:12px;letter-spacing:4px;color:#666;font-weight:700}h1{font-size:clamp(54px,8vw,100px);line-height:.88;letter-spacing:-5px;margin:16px 0}.hero p{max-width:450px;color:#666;line-height:1.7;font-size:17px}
-.cta{display:inline-block;background:#111;color:#fff;padding:16px 26px;text-decoration:none;font-weight:800;font-size:13px;margin-top:12px;border-radius:30px}
-.heroimg{height:480px;display:flex;align-items:center;justify-content:center;transform:rotate(-5deg)}.heroimg img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 25px 25px #999)}
-section{padding:75px 6%}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}h2{font-size:38px;margin:6px 0}.sub{color:#777;font-size:14px}
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}.filter{border:1px solid #ddd;background:#fff;padding:10px 18px;border-radius:25px;cursor:pointer}.filter.active,.filter:hover{background:#111;color:#fff}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{border:1px solid var(--line);background:#fff;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-6px);box-shadow:0 18px 45px #00000012}.photo{height:270px;background:#f3f3f3;display:flex;align-items:center;justify-content:center}.photo img{width:100%;height:100%;object-fit:cover}.details{padding:16px}.tag{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#888}h3{margin:7px 0;font-size:18px}.rating{font-size:12px;margin:7px 0 15px}.rating span{color:#777;margin-left:5px}.row{display:flex;align-items:center;justify-content:space-between;gap:8px}.row strong{font-size:17px}.add{background:#111;color:#fff;border:0;padding:10px 12px;font-size:10px;font-weight:800;cursor:pointer}.sizes{display:flex;gap:6px;margin-top:14px}.sizes span{border:1px solid #ddd;padding:6px 9px;font-size:11px}
-.banner{background:#111;color:#fff;margin:0 6% 75px;padding:55px 7%;display:flex;justify-content:space-between;align-items:center}.banner h2{font-size:42px;margin:0}.banner p{color:#aaa}.banner .cta{background:#fff;color:#111}
-footer{background:#f4f4f4;padding:50px 6%;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;color:#666;font-size:13px}footer strong{color:#111}footer a{display:block;margin:10px 0;color:#666;text-decoration:none}
-.toast{position:fixed;right:20px;bottom:20px;background:#111;color:#fff;padding:15px 20px;border-radius:4px;display:none;z-index:30}
-@media(max-width:900px){nav{display:none}.hero{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.heroimg{height:340px}.grid{grid-template-columns:repeat(2,1fr)}footer{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.grid{grid-template-columns:1fr 1fr;gap:10px}.photo{height:175px}section{padding:50px 4%}.hero{margin:0 2%;padding:10% 5%}h1{font-size:58px}.banner{margin:0 4% 50px;display:block}}
+:root{--black:#0b0b0b;--dark:#151515;--soft:#f5f5f5;--muted:#777;--line:#e8e8e8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:#fff}
+a{text-decoration:none;color:inherit}
+header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);z-index:20}
+.logo{font-size:23px;font-weight:900;letter-spacing:3px}
+nav{display:flex;gap:28px;font-size:14px;font-weight:700}
+nav a:hover{opacity:.55}
+.cart{border:1px solid #ddd;padding:10px 15px;border-radius:999px;font-size:13px}
+.hero{margin:0 4%;min-height:590px;background:linear-gradient(90deg,#0a0a0a 0%,#161616 55%,#090909 100%);color:#fff;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;overflow:hidden}
+.hero-copy{padding:60px}
+.kicker{font-size:12px;letter-spacing:4px;color:#bbb;margin-bottom:18px}
+h1{font-size:clamp(46px,7vw,92px);line-height:.9;margin:0 0 22px;letter-spacing:-4px}
+.hero p{color:#c9c9c9;max-width:520px;font-size:17px;line-height:1.7}
+.cta{display:inline-block;margin-top:18px;background:#fff;color:#111;padding:15px 23px;border-radius:999px;font-weight:800}
+.hero-img{height:590px;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center}
+section{padding:78px 6%}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+.sub{color:var(--muted);font-size:13px;letter-spacing:3px}
+h2{font-size:38px;margin:7px 0 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.card .photo{height:280px;background:#eee;overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover}
+.card:nth-child(2) img{object-position:55% center}
+.card:nth-child(3) img{object-position:45% center}
+.card:nth-child(4) img{object-position:50% 70%}
+.info{padding:20px}
+.info h3{margin:0 0 8px;font-size:18px}
+.price{font-weight:900;font-size:20px}
+.small{color:var(--muted);font-size:13px;margin:8px 0 16px}
+.buy{display:block;text-align:center;background:#111;color:#fff;padding:12px;border-radius:10px;font-weight:700}
+.features{background:#f7f7f7}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feature{padding:25px;border:1px solid #ddd;border-radius:16px;background:#fff}
+.feature b{display:block;margin-bottom:8px}
+.banner{background:#111;color:#fff;margin:0 6% 70px;border-radius:20px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.banner h2{margin:0}
+footer{background:#111;color:#fff;padding:45px 6%;display:flex;justify-content:space-between;gap:20px}
+footer p{color:#aaa;margin:6px 0}
+@media(max-width:900px){
+nav{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:45px 30px}.hero-img{height:430px}
+.grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){
+header{padding:0 5%}.logo{font-size:18px}
+section{padding:55px 5%}.hero{margin:0}.hero-copy{padding:42px 24px}h1{letter-spacing:-2px}
+.grid,.feature-grid{grid-template-columns:1fr}.card .photo{height:360px}
+.banner{margin:0 5% 50px;padding:32px 25px;display:block}footer{display:block}
+}
 </style>
 </head>
 <body>
-<header><a class="logo" href="#">ALL SHOES</a><nav><a href="#">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#sale">Sale</a></nav><div class="cart" onclick="showCart()">🛒 Cart (<span id="count">0</span>)</div></header>
+<header>
+  <a class="logo" href="#">VLANETNIO</a>
+  <nav>
+    <a href="#shop">Shop</a><a href="#features">Why Us</a><a href="#about">About</a>
+  </nav>
+  <a class="cart" href="#shop">View Shoes →</a>
+</header>
+
 <main>
 <section class="hero">
-<div><div class="kicker">PREMIUM FOOTWEAR • 2026</div><h1>STEP INTO<br>STYLE.</h1><p>Discover standout sneakers and everyday shoes at a simple price. Choose your size and order your favorite pair.</p><a class="cta" href="#shop">SHOP COLLECTION →</a></div>
-<div class="heroimg"><img src="images/shoe1.jpeg" alt="Featured shoe"></div>
+  <div class="hero-copy">
+    <div class="kicker">PREMIUM FOOTWEAR • 2026</div>
+    <h1>STEP INTO<br>DIFFERENT.</h1>
+    <p>Modern everyday footwear designed for comfort, durability and a clean street-style look.</p>
+    <a class="cta" href="#shop">Shop Collection →</a>
+  </div>
+  <div class="hero-img"><img src="images/shoe1.jpeg" alt="VLanetnio premium black and white sneakers"></div>
 </section>
+
 <section id="shop">
-<div class="head"><div><div class="sub">CURATED COLLECTION</div><h2>Featured Shoes</h2></div><div class="sub">Every pair • Rs. 1,499</div></div>
-<div class="filters"><button class="filter active" onclick="filter('All',this)">All</button><button class="filter" onclick="filter('Running',this)">Running</button><button class="filter" onclick="filter('Sneakers',this)">Sneakers</button><button class="filter" onclick="filter('Casual',this)">Casual</button></div>
-<div class="grid"><article class="card" data-cat="Running">
-      <div class="photo"><img src="images/shoe1.jpeg" alt="Runner Pro"></div>
-      <div class="details">
-        <div class="tag">Running</div>
-        <h3>Runner Pro</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Runner Pro')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Casual">
-      <div class="photo"><img src="images/shoe2.jpeg" alt="Classic Court"></div>
-      <div class="details">
-        <div class="tag">Casual</div>
-        <h3>Classic Court</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Classic Court')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Casual">
-      <div class="photo"><img src="images/shoe3.jpeg" alt="Grand Court"></div>
-      <div class="details">
-        <div class="tag">Casual</div>
-        <h3>Grand Court</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Grand Court')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Running">
-      <div class="photo"><img src="images/shoe4.jpeg" alt="Rose Run"></div>
-      <div class="details">
-        <div class="tag">Running</div>
-        <h3>Rose Run</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Rose Run')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Running">
-      <div class="photo"><img src="images/shoe5.jpeg" alt="Joyride Flex"></div>
-      <div class="details">
-        <div class="tag">Running</div>
-        <h3>Joyride Flex</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Joyride Flex')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Running">
-      <div class="photo"><img src="images/shoe6.jpeg" alt="Air Zoom"></div>
-      <div class="details">
-        <div class="tag">Running</div>
-        <h3>Air Zoom</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Air Zoom')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Casual">
-      <div class="photo"><img src="images/shoe7.jpeg" alt="Walk Daily"></div>
-      <div class="details">
-        <div class="tag">Casual</div>
-        <h3>Walk Daily</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Walk Daily')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Sneakers">
-      <div class="photo"><img src="images/shoe8.jpeg" alt="Flex Run"></div>
-      <div class="details">
-        <div class="tag">Sneakers</div>
-        <h3>Flex Run</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Flex Run')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Sneakers">
-      <div class="photo"><img src="images/shoe9.jpeg" alt="Urban SB"></div>
-      <div class="details">
-        <div class="tag">Sneakers</div>
-        <h3>Urban SB</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('Urban SB')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article>
-<article class="card" data-cat="Casual">
-      <div class="photo"><img src="images/shoe10.jpeg" alt="A8 Street"></div>
-      <div class="details">
-        <div class="tag">Casual</div>
-        <h3>A8 Street</h3>
-        <div class="rating">★★★★★ <span>4.8</span></div>
-        <div class="row"><strong>Rs. 1,499</strong><button class="add" onclick="addToCart('A8 Street')">ADD TO CART</button></div>
-        <div class="sizes"><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span></div>
-      </div>
-    </article></div>
+  <div class="head">
+    <div><div class="sub">CURATED COLLECTION</div><h2>Featured Shoes</h2></div>
+    <div class="sub">PREMIUM • COMFORT • STYLE</div>
+  </div>
+  <div class="grid">
+    <article class="card"><div class="photo"><img src="images/shoe1.jpeg" alt="A8 Black White Sneakers"></div><div class="info"><h3>A8 Classic Black/White</h3><div class="price">PKR 4,999</div><div class="small">Premium casual sneakers</div><a class="buy" href="#order">Order Now</a></div></article>
+    <article class="card"><div class="photo"><img src="images/shoe1.jpeg" alt="A8 Street Sneakers"></div><div class="info"><h3>A8 Street Edition</h3><div class="price">PKR 5,499</div><div class="small">Everyday street style</div><a class="buy" href="#order">Order Now</a></div></article>
+    <article class="card"><div class="photo"><img src="images/shoe1.jpeg" alt="A8 Comfort Sneakers"></div><div class="info"><h3>A8 Comfort</h3><div class="price">PKR 5,299</div><div class="small">Breathable daily comfort</div><a class="buy" href="#order">Order Now</a></div></article>
+    <article class="card"><div class="photo"><img src="images/shoe1.jpeg" alt="A8 Premium Sneakers"></div><div class="info"><h3>A8 Premium</h3><div class="price">PKR 5,999</div><div class="small">Premium finish & durable sole</div><a class="buy" href="#order">Order Now</a></div></article>
+  </div>
 </section>
-<section class="banner" id="sale"><div><h2>ONE PRICE. BIG STYLE.</h2><p>All featured pairs are just Rs. 1,499.</p></div><a class="cta" href="#shop">SHOP NOW</a></section>
+
+<section id="features" class="features">
+  <div class="head"><div><div class="sub">BUILT FOR EVERYDAY</div><h2>Why VLan etnio?</h2></div></div>
+  <div class="feature-grid">
+    <div class="feature"><b>Premium Upper</b><span>Clean finish with a premium-inspired look.</span></div>
+    <div class="feature"><b>Breathable Comfort</b><span>Designed for comfortable everyday wear.</span></div>
+    <div class="feature"><b>Durable Outsole</b><span>Built for regular daily use.</span></div>
+    <div class="feature"><b>Stylish Design</b><span>Minimal black-and-white street aesthetic.</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="banner">
+    <div><div class="sub">MORE THAN SHOES</div><h2>Casual shoes for everyday style.</h2></div>
+    <a class="cta" href="#order">Order Now →</a>
+  </div>
+</section>
+
+<section id="order">
+  <div class="head"><div><div class="sub">READY TO ORDER?</div><h2>Contact us to place your order</h2></div></div>
+  <p style="max-width:650px;color:#666;line-height:1.7">Replace the contact details below with your WhatsApp number, Instagram page or order form link. The buttons are ready to be connected.</p>
+  <a class="cta" style="background:#111;color:#fff" href="mailto:orders@example.com?subject=Shoe%20Order">Email to Order →</a>
+</section>
 </main>
-<footer><div><strong>ALL SHOES</strong><p>Premium-looking footwear, made simple.</p><p>© 2026 ALL SHOES</p></div><div><strong>SHOP</strong><a href="#shop">All Shoes</a><a href="#shop">New Arrivals</a></div><div><strong>HELP</strong><a href="#">Size Guide</a><a href="#">Delivery</a><a href="#">Returns</a></div><div><strong>CONTACT</strong><a href="https://wa.me/923000000000">WhatsApp</a><a href="mailto:hello@example.com">Email</a></div></footer>
-<div class="toast" id="toast"></div>
-<script>
-let cart=0;
-function addToCart(name){cart++;document.getElementById('count').textContent=cart;let t=document.getElementById('toast');t.textContent=name+' added to cart ✓';t.style.display='block';setTimeout(()=>t.style.display='none',1300)}
-function showCart(){alert(cart ? 'Your cart has '+cart+' item(s). Total: Rs. '+(cart*1499).toLocaleString() : 'Your cart is empty.')}
-function filter(cat,btn){document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.card').forEach(c=>c.style.display=(cat==='All'||c.dataset.cat===cat)?'block':'none')}
-</script>
+
+<footer>
+  <div><strong>VLANETNIO</strong><p>Premium online footwear.</p></div>
+  <div><p>© 2026 VLan etnio. All rights reserved.</p></div>
+</footer>
 </body>
 </html>
